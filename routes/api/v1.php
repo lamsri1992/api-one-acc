@@ -24,8 +24,7 @@ Route::prefix('v1')->group(function () {
     Route::apiResource('/acc_type', accController::class);
     Route::apiResource('/sub_type', subController::class);
     Route::apiResource('/creditor', creditorController::class);
-    //Route::apiResource('/users', userController::class);
-   // Route::get('/users', userController::class);
+    Route::apiResource('/users', userController::class);
     Route::apiResource('/financeview', financeViewController::class);
     Route::apiResource('/permission', permController::class);
     Route::apiResource('/department', departmentController::class);
