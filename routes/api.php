@@ -39,6 +39,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::controller(AuthController::class)->group(function(){
     Route::post('login','login');
+    Route::post('logout','logout');
     /*
     Route::post('register','register')
     Route::post('login','login')
@@ -46,6 +47,5 @@ Route::controller(AuthController::class)->group(function(){
     */
 });
 Route::controller(userController::class)->group(function(){
-
     Route::get('/users', 'index');
 });
